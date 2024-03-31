@@ -37,6 +37,10 @@ h3 {
   margin: 10px;
 }
 
+img {
+  width: 100%
+}
+/* Constrains images to their container's size */
 /* Groups & Items  (Desktop) */
 
 @media all and (min-width: 800px) {

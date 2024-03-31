@@ -33,6 +33,41 @@ h3 {
   margin: 10px;
 }
 
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
 .item-double {
   flex: 2;
 }
+
+/* body {
+  background-color: green;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+} */
+/* Above targets window by size and works downward, which is against preferred methods in industry
+This method is known as Graceful Degradation, and is degraded apparently */
+
+/* Below is the approach we want to take. */
+
+body {
+  background-color: red;
+}
+
+@media all and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
+/* Somehow much better? */
